@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<div role="tabpanel">
+  <ul class="nav nav-tabs" role="tablist">
+    <li role="presentation"
+      ng-repeat="tab in tabset.tabs">
+
+      <a href=""
+        role="tab"
+        ng-click="tabset.select(tab)">{{tab.heading}}</a>
+    </li>
+  </ul>
+
+  <ng-transclude>
+  </ng-transclude>
+</div>
+
+</body>
+</html>
